@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess the Country</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title-box">
+      <h1 class="glow">Guess the Country!</h1>
+    </div>
+    <div id="flagContainer">
+      <img id="mysteryFlag" src="" alt="Mystery Flag">
+    </div>
+    <div class="dropdown">
+      <input type="text" id="countryInput" placeholder="Enter a country...">
+      <ul class="suggestions-container" id="suggestions"></ul>
+    </div>
+    <button id="checkButton">Check</button>
+    <p id="result" class="glow"></p>
+    <p id="lives"> 
+      <span id="hearts">
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+      </span>
+    </p>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content" id="modalContent">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="modalText" class="glow"></p>
+        <button id="restartButton">Restart</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
